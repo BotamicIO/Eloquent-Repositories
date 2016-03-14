@@ -11,14 +11,6 @@
 
 namespace DraperStudio\Eloquent\Repositories\Decorators\Cache;
 
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\AggregateTrait as AggregateContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\BuilderTrait as BuilderContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CollectionTrait as CollectionContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CriteriaTrait as CriteriaContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CrudlTrait as CrudlContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\ExceptionTrait as ExceptionContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\FindTrait as FindContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\RequireTrait as RequireContract;
 use DraperStudio\Eloquent\Repositories\Traits\Decorators\Cache\AggregateTrait;
 use DraperStudio\Eloquent\Repositories\Traits\Decorators\Cache\BuilderTrait;
 use DraperStudio\Eloquent\Repositories\Traits\Decorators\Cache\CollectionTrait;
@@ -34,15 +26,7 @@ use DraperStudio\Eloquent\Repositories\Traits\Decorators\Cache\RequireTrait;
  *
  * @author DraperStudio <hello@draperstudio.tech>
  */
-class BaseCacheDecorator extends AbstractCacheDecorator implements
-AggregateContract,
-                                                                   BuilderContract,
-                                                                   CollectionContract,
-                                                                   CriteriaContract,
-                                                                   CrudlContract,
-                                                                   ExceptionContract,
-                                                                   FindContract,
-                                                                   RequireContract
+class BaseCacheDecorator extends AbstractCacheDecorator
 {
     use AggregateTrait;
     use BuilderTrait;
