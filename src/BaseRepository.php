@@ -55,9 +55,6 @@ class BaseRepository extends AbstractRepository
         parent::__construct($app);
     }
 
-    /**
-     *
-     */
     public function getModelClass()
     {
         //
