@@ -11,16 +11,6 @@
 
 namespace DraperStudio\Eloquent\Repositories;
 
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\AggregateTrait as AggregateContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\BuilderTrait as BuilderContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CollectionTrait as CollectionContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CriteriaTrait as CriteriaContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\CrudlTrait as CrudlContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\ExceptionTrait as ExceptionContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\FindTrait as FindContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\GetterTrait as GetterContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\RelationshipTrait as RelationshipContract;
-use DraperStudio\Eloquent\Repositories\Contracts\Traits\RequireTrait as RequireContract;
 use DraperStudio\Eloquent\Repositories\Traits\AggregateTrait;
 use DraperStudio\Eloquent\Repositories\Traits\BuilderTrait;
 use DraperStudio\Eloquent\Repositories\Traits\CollectionTrait;
@@ -39,17 +29,7 @@ use Illuminate\Support\Collection;
  *
  * @author DraperStudio <hello@draperstudio.tech>
  */
-class BaseRepository extends AbstractRepository implements
-                                                           AggregateContract,
-                                                           BuilderContract,
-                                                           CollectionContract,
-                                                           CriteriaContract,
-                                                           CrudlContract,
-                                                           ExceptionContract,
-                                                           FindContract,
-                                                           GetterContract,
-                                                           RelationshipContract,
-                                                           RequireContract
+class BaseRepository extends AbstractRepository
 {
     use AggregateTrait;
     use BuilderTrait;
