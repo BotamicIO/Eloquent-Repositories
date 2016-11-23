@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent Repositories.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
 trait UuidTrait
@@ -23,7 +32,7 @@ trait UuidTrait
      */
     public function requireByUuid($uuid, $columns = ['*'])
     {
-        if (!$record = $this->findByUuid($uuid, $columns)) {
+        if (! $record = $this->findByUuid($uuid, $columns)) {
             $this->modelNotFound($this->model);
         }
 

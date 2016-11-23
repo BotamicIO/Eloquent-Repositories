@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent Repositories.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
 use Carbon\Carbon;
@@ -219,7 +228,7 @@ trait DateTimeTrait
      */
     public function fromDateTimeRange($range, $exact = false)
     {
-        if (!is_array($range)) {
+        if (! is_array($range)) {
             $range = DateTime::getDateTimeRange($range, $range, $exact);
         } else {
             $range = [

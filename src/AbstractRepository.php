@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent Repositories.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Eloquent\Repositories;
 
 use BrianFaust\Eloquent\Repositories\Contracts\Repository;
@@ -50,7 +59,7 @@ abstract class AbstractRepository implements Repository
     {
         $model = $this->app->make($this->getModelClass());
 
-        if (!$model instanceof Model) {
+        if (! $model instanceof Model) {
             throw new RepositoryException("Class {$this->model()} must be an instance of Illuminate\\Database\\Eloquent\\Model");
         }
 
