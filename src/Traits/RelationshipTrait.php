@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent Repositories.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +26,7 @@ trait RelationshipTrait
      */
     public function saveRelation($modelOrId, $relation, Model $relationModel, array $joining = [], $touch = true)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -34,7 +43,7 @@ trait RelationshipTrait
      */
     public function saveRelations($modelOrId, $relation, array $models, array $joinings = [])
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -50,7 +59,7 @@ trait RelationshipTrait
      */
     public function associateRelation($modelOrId, $relation, Model $relationModel)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -68,7 +77,7 @@ trait RelationshipTrait
      */
     public function attachRelation($modelOrId, $relation, $relationId, array $attributes = [], $touch = true)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -85,7 +94,7 @@ trait RelationshipTrait
      */
     public function detachRelation($modelOrId, $relation, $ids = [], $touch = true)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -102,7 +111,7 @@ trait RelationshipTrait
      */
     public function syncRelation($modelOrId, $relation, $ids, $detaching = true)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
@@ -120,7 +129,7 @@ trait RelationshipTrait
      */
     public function updateExistingPivot($modelOrId, $relation, $relationId, array $attributes, $touch = true)
     {
-        if (!$modelOrId instanceof Model) {
+        if (! $modelOrId instanceof Model) {
             $modelOrId = $this->requireById($modelOrId);
         }
 
