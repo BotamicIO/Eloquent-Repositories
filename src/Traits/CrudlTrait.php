@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Eloquent Repositories.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
 use BrianFaust\Eloquent\Repositories\Exceptions\RepositoryException;
@@ -64,7 +73,7 @@ trait CrudlTrait
     {
         $model = $this->requireBy($column, $id);
 
-        if (!$model = $model->fill($data)->save()) {
+        if (! $model = $model->fill($data)->save()) {
             throw new RepositoryException('Could not be saved');
         }
 
@@ -83,7 +92,7 @@ trait CrudlTrait
      */
     public function updateModel(Model $model, array $data)
     {
-        if (!$model->update($data)) {
+        if (! $model->update($data)) {
             throw new RepositoryException('Could not be saved');
         }
 
