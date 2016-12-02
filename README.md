@@ -11,15 +11,13 @@ $ composer require faustbrian/eloquent-repositories
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    BrianFaust\Eloquent\Repositories\ServiceProvider::class
-];
+BrianFaust\Eloquent\RepositoriesServiceProvider::class
 ```
 
 ## Usage
 
 ``` php
-To-Do...
+...
 ```
 
 ## Security
