@@ -73,7 +73,7 @@ trait CrudlTrait
     {
         $model = $this->requireBy($column, $id);
 
-        if (! $model = $model->fill($data)->save()) {
+        if (!$model = $model->fill($data)->save()) {
             throw new RepositoryException('Could not be saved');
         }
 
@@ -92,7 +92,7 @@ trait CrudlTrait
      */
     public function updateModel(Model $model, array $data)
     {
-        if (! $model->update($data)) {
+        if (!$model->update($data)) {
             throw new RepositoryException('Could not be saved');
         }
 
