@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Eloquent\Repositories;
 
 use BrianFaust\Eloquent\Repositories\Traits\AggregateTrait;
@@ -52,6 +54,5 @@ class BaseRepository extends AbstractRepository
 
     public function getModelClass()
     {
-        //
     }
 }
