@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use BrianFaust\Eloquent\Repositories\Criteria\WithLazyRelations;
 use BrianFaust\Eloquent\Repositories\Criteria\WithRelations;
+use BrianFaust\Eloquent\Repositories\Criteria\WithLazyRelations;
 
 trait BuilderTrait
 {

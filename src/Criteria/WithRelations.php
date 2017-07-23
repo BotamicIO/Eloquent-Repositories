@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Eloquent\Repositories\Criteria;
 
-use BrianFaust\Eloquent\Repositories\Contracts\Repository;
 use Illuminate\Database\Eloquent\Model;
+use BrianFaust\Eloquent\Repositories\Contracts\Repository;
 
 class WithRelations extends Criterion
 {
