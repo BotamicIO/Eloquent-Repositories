@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use BrianFaust\Eloquent\Repositories\Exceptions\ValidationException;
 use Illuminate\Contracts\Validation\Validator;
+use BrianFaust\Eloquent\Repositories\Exceptions\ValidationException;
 
 trait HttpTrait
 {
