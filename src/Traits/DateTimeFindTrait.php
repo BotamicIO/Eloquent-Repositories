@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use BrianFaust\Eloquent\Repositories\Utils\DateTime;
 use Carbon\Carbon;
+use BrianFaust\Eloquent\Repositories\Utils\DateTime;
 
 trait DateTimeFindTrait
 {
@@ -349,7 +349,7 @@ trait DateTimeFindTrait
      */
     public function findFromDateTimeRange($key, $value, $range, $exact = false)
     {
-        if (!is_array($range)) {
+        if (! is_array($range)) {
             $range = DateTime::getDateTimeRange($range, $range, $exact);
         } else {
             $range = [

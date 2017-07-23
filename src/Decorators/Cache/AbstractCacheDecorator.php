@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Eloquent\Repositories\Decorators\Cache;
 
-use BrianFaust\Eloquent\Repositories\Contracts\Decorators\Cache;
 use BrianFaust\Eloquent\Repositories\Contracts\Repository;
+use BrianFaust\Eloquent\Repositories\Contracts\Decorators\Cache;
 
 abstract class AbstractCacheDecorator
 {
