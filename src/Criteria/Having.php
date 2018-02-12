@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Criteria;
 
-use Illuminate\Database\Eloquent\Model;
 use BrianFaust\Eloquent\Repositories\Contracts\Repository;
+use Illuminate\Database\Eloquent\Model;
 
 class Having extends Criterion
 {

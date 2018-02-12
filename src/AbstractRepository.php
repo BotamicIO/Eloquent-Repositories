@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories;
 
-use Illuminate\Container\Container;
-use Illuminate\Database\Eloquent\Model;
 use BrianFaust\Eloquent\Repositories\Contracts\Repository;
 use BrianFaust\Eloquent\Repositories\Exceptions\RepositoryException;
+use Illuminate\Container\Container;
+use Illuminate\Database\Eloquent\Model;
 
 abstract class AbstractRepository implements Repository
 {
@@ -61,7 +61,7 @@ abstract class AbstractRepository implements Repository
     {
         $model = $this->app->make($this->getModelClass());
 
-        if (! $model instanceof Model) {
+        if (!$model instanceof Model) {
             throw new RepositoryException("Class {$this->model()} must be an instance of Illuminate\\Database\\Eloquent\\Model");
         }
 
