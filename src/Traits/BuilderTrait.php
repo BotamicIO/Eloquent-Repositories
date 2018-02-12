@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use BrianFaust\Eloquent\Repositories\Criteria\WithRelations;
 use BrianFaust\Eloquent\Repositories\Criteria\WithLazyRelations;
+use BrianFaust\Eloquent\Repositories\Criteria\WithRelations;
 
 trait BuilderTrait
 {
