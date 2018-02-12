@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Decorators\Cache;
 
-use Illuminate\Cache\CacheManager as IlluminateCacheManager;
 use BrianFaust\Eloquent\Repositories\Contracts\Decorators\Cache;
+use Illuminate\Cache\CacheManager as IlluminateCacheManager;
 
 class CacheManager implements Cache
 {
