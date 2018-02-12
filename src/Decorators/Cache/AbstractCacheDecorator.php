@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Decorators\Cache;
 
-use BrianFaust\Eloquent\Repositories\Contracts\Repository;
 use BrianFaust\Eloquent\Repositories\Contracts\Decorators\Cache;
+use BrianFaust\Eloquent\Repositories\Contracts\Repository;
 
 abstract class AbstractCacheDecorator
 {

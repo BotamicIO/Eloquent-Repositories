@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use Illuminate\Contracts\Validation\Validator;
 use BrianFaust\Eloquent\Repositories\Exceptions\ValidationException;
+use Illuminate\Contracts\Validation\Validator;
 
 trait HttpTrait
 {
