@@ -34,7 +34,7 @@ trait HashidTrait
      */
     public function requireByHashid($hashid, $columns = ['*'])
     {
-        if (! $record = $this->findByHashid($hashid, $columns)) {
+        if (!$record = $this->findByHashid($hashid, $columns)) {
             $this->modelNotFound($this->model);
         }
 

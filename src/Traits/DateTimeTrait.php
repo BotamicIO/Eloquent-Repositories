@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories\Traits;
 
-use Carbon\Carbon;
 use BrianFaust\Eloquent\Repositories\Utils\DateTime;
+use Carbon\Carbon;
 
 trait DateTimeTrait
 {
@@ -230,7 +230,7 @@ trait DateTimeTrait
      */
     public function fromDateTimeRange($range, $exact = false)
     {
-        if (! is_array($range)) {
+        if (!is_array($range)) {
             $range = DateTime::getDateTimeRange($range, $range, $exact);
         } else {
             $range = [

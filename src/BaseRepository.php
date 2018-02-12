@@ -13,18 +13,18 @@ declare(strict_types=1);
 
 namespace BrianFaust\Eloquent\Repositories;
 
-use Illuminate\Support\Collection;
-use Illuminate\Container\Container;
-use BrianFaust\Eloquent\Repositories\Traits\FindTrait;
-use BrianFaust\Eloquent\Repositories\Traits\CrudlTrait;
-use BrianFaust\Eloquent\Repositories\Traits\GetterTrait;
-use BrianFaust\Eloquent\Repositories\Traits\BuilderTrait;
-use BrianFaust\Eloquent\Repositories\Traits\RequireTrait;
-use BrianFaust\Eloquent\Repositories\Traits\CriteriaTrait;
 use BrianFaust\Eloquent\Repositories\Traits\AggregateTrait;
-use BrianFaust\Eloquent\Repositories\Traits\ExceptionTrait;
+use BrianFaust\Eloquent\Repositories\Traits\BuilderTrait;
 use BrianFaust\Eloquent\Repositories\Traits\CollectionTrait;
+use BrianFaust\Eloquent\Repositories\Traits\CriteriaTrait;
+use BrianFaust\Eloquent\Repositories\Traits\CrudlTrait;
+use BrianFaust\Eloquent\Repositories\Traits\ExceptionTrait;
+use BrianFaust\Eloquent\Repositories\Traits\FindTrait;
+use BrianFaust\Eloquent\Repositories\Traits\GetterTrait;
 use BrianFaust\Eloquent\Repositories\Traits\RelationshipTrait;
+use BrianFaust\Eloquent\Repositories\Traits\RequireTrait;
+use Illuminate\Container\Container;
+use Illuminate\Support\Collection;
 
 class BaseRepository extends AbstractRepository
 {
