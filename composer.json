@@ -1,19 +1,19 @@
 {
-    "name": "faustbrian/eloquent-repositories",
+    "name": "artisanry/eloquent-repositories",
     "description": "Adds basic repository functionality for Laravel",
-    "keywords": ["laravel", "framework", "Eloquent-Repositories", "Eloquent Repositories", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Eloquent-Repositories", "Eloquent Repositories"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
         "illuminate/support": "^5.6",
         "illuminate/database": "^5.6",
         "nesbot/carbon": "^1.21",
-        "faustbrian/eloquent-schema": "^1.0"
+        "artisanry/eloquent-schema": "^1.0"
     },
     "require-dev": {
         "graham-campbell/testbench": "^5.0",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Repositories\\": "src/"
+            "Artisanry\\Repositories\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Repositories\\": "tests"
+            "Artisanry\\Tests\\Repositories\\": "tests"
         }
     },
     "config": {

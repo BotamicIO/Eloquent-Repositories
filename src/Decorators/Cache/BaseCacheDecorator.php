@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Eloquent Repositories.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Eloquent\Repositories\Decorators\Cache;
+namespace Artisanry\Eloquent\Repositories\Decorators\Cache;
 
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\AggregateTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\BuilderTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\CollectionTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\CriteriaTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\CrudlTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\ExceptionTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\FindTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\RelationshipTrait;
-use BrianFaust\Eloquent\Repositories\Traits\Decorators\Cache\RequireTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\AggregateTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\BuilderTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\CollectionTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\CriteriaTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\CrudlTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\ExceptionTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\FindTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\RelationshipTrait;
+use Artisanry\Eloquent\Repositories\Traits\Decorators\Cache\RequireTrait;
 
 class BaseCacheDecorator extends AbstractCacheDecorator
 {

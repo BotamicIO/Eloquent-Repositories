@@ -5,24 +5,24 @@ declare(strict_types=1);
 /*
  * This file is part of Eloquent Repositories.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Eloquent\Repositories;
+namespace Artisanry\Eloquent\Repositories;
 
-use BrianFaust\Eloquent\Repositories\Traits\AggregateTrait;
-use BrianFaust\Eloquent\Repositories\Traits\BuilderTrait;
-use BrianFaust\Eloquent\Repositories\Traits\CollectionTrait;
-use BrianFaust\Eloquent\Repositories\Traits\CriteriaTrait;
-use BrianFaust\Eloquent\Repositories\Traits\CrudlTrait;
-use BrianFaust\Eloquent\Repositories\Traits\ExceptionTrait;
-use BrianFaust\Eloquent\Repositories\Traits\FindTrait;
-use BrianFaust\Eloquent\Repositories\Traits\GetterTrait;
-use BrianFaust\Eloquent\Repositories\Traits\RelationshipTrait;
-use BrianFaust\Eloquent\Repositories\Traits\RequireTrait;
+use Artisanry\Eloquent\Repositories\Traits\AggregateTrait;
+use Artisanry\Eloquent\Repositories\Traits\BuilderTrait;
+use Artisanry\Eloquent\Repositories\Traits\CollectionTrait;
+use Artisanry\Eloquent\Repositories\Traits\CriteriaTrait;
+use Artisanry\Eloquent\Repositories\Traits\CrudlTrait;
+use Artisanry\Eloquent\Repositories\Traits\ExceptionTrait;
+use Artisanry\Eloquent\Repositories\Traits\FindTrait;
+use Artisanry\Eloquent\Repositories\Traits\GetterTrait;
+use Artisanry\Eloquent\Repositories\Traits\RelationshipTrait;
+use Artisanry\Eloquent\Repositories\Traits\RequireTrait;
 use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
 
