@@ -14,7 +14,6 @@ declare(strict_types=1);
 namespace Artisanry\Eloquent\Repositories\Traits;
 
 use Artisanry\Eloquent\Repositories\Exceptions\ValidationException;
-use Illuminate\Contracts\Validation\Validator;
 
 trait HttpTrait
 {
